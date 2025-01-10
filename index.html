@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <main class="container">
+        <!-- Entry Page - choose, who will move first? -->
+        <section id="entry_page">
+            <div class="choose">
+                <h1 class="heading">Tic Tac Toe</h1>
+                <!-- Outer Container -->
+                <div class="outer_container">
+                    <!--  Inner container -->
+                    <div class="inner_up">
+                        <div class="no_of_wins" id="x_wins">'X' Wins: 0 times</div>
+                        <div class="no_of_wins" id="o_wins">'O' Wins: 0 times</div>
+                    </div>
+                    <div class="inner_down">
+                        <p id="paragraph_choose">Who wants to go first?</p>
+                        <div id="innermost">
+                            <button class="choose_player" id="o_choose">Player(O)</button>
+                            <button class="choose_player" id="x_choose">Player(X)</button>
+                        </div>
+                    </div>
+                    <!-- End - Inner Container -->
+                </div>
+                <!-- End - Outer Container -->
+            </div>
+        </section>
+        <!-- End of entry page -->
+         <!-- Main Page - Tic Tac Toe -->
+        <section id="main_page">
+            <div class="choose" id="container">
+                <h1 class="heading" id="head_main">Tic Tac Toe</h1>
+                <div class="outer_container" id="outer_main">
+                    <div class="inner_up" id="inner_up_main">
+                        <div class="no_of_wins" id="x_wins">'X' Wins: 0 times</div>
+                        <div class="no_of_wins" id="o_wins">'O' Wins: 0 times</div>
+                    </div>
+                    <div class="inner_down" id="inner_down_main">
+                        <div id="innermost">
+                            <div class="choose_player" id="o_turn">O Turn</div>
+                            <div class="choose_player" id="x_turn">X Turn</div>
+                        </div>
+                        <div id="button_sec">
+                            <button class="box"></button>
+                            <button class="box"></button>
+                            <button class="box"></button>
+                            <button class="box"></button>
+                            <button class="box"></button>
+                            <button class="box"></button>
+                            <button class="box"></button>
+                            <button class="box"></button>
+                            <button class="box"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- End of main page -->
+         <!-- Winner page - declares the winner -->
+        <section id="winner_page">
+            <div class="choose">
+                <h1 class="heading">Tic Tac Toe</h1>
+                <div class="outer_container">
+                    <div class="inner_up">
+                        <div class="no_of_wins" id="x_wins">'X' Wins: 0 times</div>
+                        <div class="no_of_wins" id="o_wins">'O' Wins: 0 times</div>
+                    </div>
+                    <div class="inner_down">
+                    <button id="play_again">Play Again</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of winner page -->
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
